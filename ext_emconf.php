@@ -1,4 +1,5 @@
 <?php
+
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Popup Power',
     'description' => 'Powerful TYPO3 extension to display popups.',
