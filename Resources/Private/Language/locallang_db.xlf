@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:popup_power/Resources/Private/Language/locallang_db.xlf" date="2024-04-04T10:58:51Z" product-name="popup_power">
+        <header/>
+        <body>
+			<trans-unit id="tx_popuppower_domain_model_configuration" resname="tx_popuppower_domain_model_configuration">
+				<source>Configuration</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_name" resname="tx_popuppower_domain_model_configuration_name">
+				<source>Name</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

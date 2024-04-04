@@ -274,7 +274,7 @@ while getopts ":s:a:d:i:j:k:p:t:e:xy:z:nhuv" OPT; do
         t)
             TYPO3_VERSION=${OPTARG}
             if ! [[ ${TYPO3_VERSION} =~ ^(11|12|13)$ ]]; then
-                INVALID_OPTIONS+=("p ${OPTARG}")
+                INVALID_OPTIONS+=("t ${OPTARG}")
             fi
             ;;
         e)

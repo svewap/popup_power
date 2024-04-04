@@ -1,0 +1,21 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+    xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+    <f:layout name="Default" />
+
+    <f:section name="Content">
+        <h1><f:translate key="module_dashboard_title" extensionName="popup_power" /></h1>
+        <p><f:translate key="module_dashboard_description" extensionName="popup_power" /></p>
+        <f:if condition="{noPageSelected}">
+            <f:then>
+                <p class="alert alert-warning"><f:translate key="module_dashboard_nopageselected" extensionName="popup_power" /></p>
+            </f:then>
+            <f:else>
+                <f:render partial="Dashboard" arguments="{_all}" />
+            </f:else>
+        </f:if>
+    </f:section>
+</html>

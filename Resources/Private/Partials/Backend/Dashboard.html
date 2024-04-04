@@ -1,0 +1,24 @@
+<f:if condition="{configurationClosest} && {pageClosest}">
+    <div class="alert alert-info">
+        <p class="m-0"><a href="{be:moduleLink(route: 'web_popuppower_dashboard', arguments: '{id:pageClosest.uid}')}"><f:translate key="module_dashboard_configuration_closest" extensionName="popup_power" arguments="{0: pageClosest.title, 1: pageClosest.uid}" /></a></p>
+    </div>
+</f:if>
+<f:form action="save" method="POST" name="configuration" object="{configuration}" enctype="multipart/form-data">
+    <div class="mb-3 form-check form-switch">
+        <f:form.checkbox property="hidden" class="form-check-input" additionalAttributes="{role: 'switch'}" value="1" />
+        <label for="hidden" class="form-check-label"><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.enabled" extensionName="popup_power" /></label>
+    </div>
+    <div class="mb-3 form-check form-switch">
+        <f:form.checkbox property="extendToSubpages" class="form-check-input" additionalAttributes="{role: 'switch'}" value="1" />
+        <label for="hidden" class="form-check-label"><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.extendToSubpages_formlabel" extensionName="popup_power" /></label>
+    </div>
+    <div class="form-buttons">
+        <f:form.hidden name="currentPageId" value="{currentPageId}" />
+        <f:form.submit class="btn btn-primary" name="submit" value="{f:translate(key:'module_dashboard_form_submit', extensionName: 'popup_power')}" />
+    </div>
+    <f:if condition="{configuration.uid} > 0">
+        <div class="form-buttons mt-5">
+            <f:form.submit class="btn btn-danger" name="remove" value="{f:translate(key:'module_dashboard_form_remove', extensionName: 'popup_power')}" />
+        </div>
+    </f:if>
+</f:form>

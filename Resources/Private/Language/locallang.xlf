@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:popup_power/Resources/Private/Language/locallang.xlf" date="2024-04-04T10:58:51Z" product-name="popup_power">
+        <header/>
+        <body>
+			<trans-unit id="module_dashboard_title" resname="module_dashboard_title">
+				<source>Popup Power Dashboard</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_description" resname="module_dashboard_description">
+				<source>This is the dashboard for the slavlee/popup-power extension. Here you can configure the popups for every single TYPO3 page.</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_nopageselected" resname="module_dashboard_nopageselected">
+				<source>Please select a page</source>
+			</trans-unit>
+
+			<trans-unit id="module_dashboard_form_submit" resname="module_dashboard_form_submit">
+				<source>Save configuration</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_form_remove" resname="module_dashboard_form_remove">
+				<source>Remove configuration</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_configuration_closest" resname="module_dashboard_configuration_closest">
+				<source>This page has no individual configuration. The configuration is inherited from page: '%s' (ID: '%s').</source>
+			</trans-unit>
+
+			<trans-unit id="tx_popuppower_domain_model_configuration_override" resname="tx_popuppower_domain_model_configuration_override">
+				<source>Override configuration</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>
