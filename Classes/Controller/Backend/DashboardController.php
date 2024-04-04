@@ -21,6 +21,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Slavlee\PopupPower\Domain\Model\Configuration;
 use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
+use Slavlee\PopupPower\Utility\TYPO3\RepositoryUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Backend\Attribute\AsController;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
@@ -91,6 +92,7 @@ final class DashboardController extends ActionController
      */
     public function removeConfiguration(ServerRequestInterface $request): ResponseInterface
     {
+        RepositoryUtility::ignoreEnabledFields($this->configurationRepository, ['disabled']);
         $configuration = $this->configurationRepository->findByUid($request->getQueryParams()['configurationId']);
 
         if ($configuration) {
