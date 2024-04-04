@@ -65,7 +65,7 @@ handleDbmsAndDriverOptions() {
 
 # Load help text into $HELP
 read -r -d '' HELP <<EOF
-slavlee/waf test runner. Execute unit test suite and some other details.
+slavlee/popup-power test runner. Execute unit test suite and some other details.
 Also used by github for test execution.
 
 Recommended docker version is >=20.10 for xdebug break pointing to work reliably, and
@@ -73,7 +73,7 @@ a recent docker-compose (tested >=1.21.2) is needed.
 
 Usage: $0 [options] [file]
 
-No arguments: Run all unit tests with PHP 7.4
+No arguments: Run all unit tests with PHP 8.2
 
 Options:
     -s <...>
@@ -273,7 +273,7 @@ while getopts ":s:a:d:i:j:k:p:t:e:xy:z:nhuv" OPT; do
             ;;
         t)
             TYPO3_VERSION=${OPTARG}
-            if ! [[ ${TYPO3_VERSION} =~ ^(11|12)$ ]]; then
+            if ! [[ ${TYPO3_VERSION} =~ ^(11|12|13)$ ]]; then
                 INVALID_OPTIONS+=("p ${OPTARG}")
             fi
             ;;
