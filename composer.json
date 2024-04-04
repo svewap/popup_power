@@ -1,0 +1,40 @@
+{
+    "name": "slavlee/popup-power",
+    "type": "typo3-cms-extension",
+    "description": "Powerful TYPO3 extension to display popups.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^8.1",
+        "typo3/cms-backend": "^12.4 || ^13.0",
+        "typo3/cms-core": "^12.4 || ^13.0"
+    },
+    "require-dev": {
+        "typo3/coding-standards": "^0.7.1"
+    },
+    "authors": [
+        {
+            "name": "Kevin Chileong Lee",
+            "role": "Developer",
+            "email": "support@slavlee.de",
+            "homepage": "https://slavlee.de/"
+        }
+    ],
+    "keywords": [
+        "typo3",
+        "popup",
+		"modal"
+    ],
+    "support": {
+        "issues": "https://github.com/slavlee/popup_power/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slavlee\\PopupPower\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "popup_power"
+        }
+    }
+}
