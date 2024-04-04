@@ -24,7 +24,6 @@ class ExtLocalconf extends Base
 {
     /**
      * Does the main class purpose
-     * @return void
      */
     public function invoke(): void
     {
@@ -33,7 +32,6 @@ class ExtLocalconf extends Base
 
     /**
      * Configure all Frontend Plugins
-     * @return void
      */
     private function configurePlugins(): void
     {
