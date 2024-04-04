@@ -21,7 +21,6 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Slavlee\PopupPower\Domain\Model\Configuration;
 use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
-use Slavlee\PopupPower\Utility\TYPO3\Persistence\PersistenceUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Backend\Attribute\AsController;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
@@ -38,8 +37,7 @@ final class DashboardController extends ActionController
         private readonly ConfigurationRepository $configurationRepository,
         private readonly UriBuilder $backendUriBuilder,
         private readonly PageRepository $pageRepository
-    ) {
-    }
+    ) {}
 
     /**
      * Start page of the dashboard

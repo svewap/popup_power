@@ -33,7 +33,7 @@ class RootlineUtility
         $rootlineUtility = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Utility\RootlineUtility::class, $pageId);
         $pageRecords = $rootlineUtility->get();
 
-        foreach($pageRecords as $pageRecord) {
+        foreach ($pageRecords as $pageRecord) {
             $pageIds[] = $pageRecord['uid'];
         }
 
