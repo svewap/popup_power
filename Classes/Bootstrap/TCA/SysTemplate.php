@@ -24,7 +24,6 @@ class SysTemplate extends Base
 {
     /**
      * Does the main class purpose
-     * @return void
      */
     public function invoke(): void
     {
@@ -33,7 +32,6 @@ class SysTemplate extends Base
 
     /**
      * ExtensionManagementUtility::addStaticFile
-     * @return void
      */
     private function addStaticFiles(): void
     {

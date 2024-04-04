@@ -25,5 +25,5 @@ abstract class Base
      * Does the main class purpose
      * @return void
      */
-    public abstract function invoke(): void;
+    abstract public function invoke(): void;
 }

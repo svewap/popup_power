@@ -17,17 +17,16 @@ declare(strict_types=1);
 
 namespace Slavlee\PopupPower\Controller;
 
+use Psr\Http\Message\ResponseInterface;
+use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
-use Psr\Http\Message\ResponseInterface;
 
 final class PopupController extends ActionController
 {
     public function __construct(
         private readonly ConfigurationRepository $configurationRepository
-    ) {
-    }
+    ) {}
 
     /**
      * Show the popup, when enabled

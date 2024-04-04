@@ -41,7 +41,7 @@ class ExtLocalconf extends Base
             'PopupPower',
             'popup',
             [
-                PopupController::class => 'show, nothing'
+                PopupController::class => 'show, nothing',
             ]
         );
     }
