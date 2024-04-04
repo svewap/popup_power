@@ -14,7 +14,7 @@ return [
         'controllerActions' => [
             \Slavlee\PopupPower\Controller\Backend\DashboardController::class => [
                 'show',
-                'save'
+                'save',
             ],
         ],
     ],

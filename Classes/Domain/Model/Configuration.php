@@ -115,7 +115,7 @@ class Configuration extends AbstractEntity
         $vars = get_object_vars($this);
         $propertiesToIgnore = ['uid', 'pid', '_localizedUid', '_languageUid', '_versionedUid', 'override', 'isRoot'];
 
-        foreach($vars as $propertyName => $value) {
+        foreach ($vars as $propertyName => $value) {
             if (\in_array($propertyName, $propertiesToIgnore)) {
                 continue;
             }

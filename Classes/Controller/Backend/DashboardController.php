@@ -104,7 +104,7 @@ final class DashboardController extends ActionController
             $this->backendUriBuilder->buildUriFromRoutePath(
                 '/module/web/popuppower/dashboard',
                 [
-                    'id' => $request->getQueryParams()['id']
+                    'id' => $request->getQueryParams()['id'],
                 ]
             )
         );
@@ -124,7 +124,7 @@ final class DashboardController extends ActionController
                     '/module/web/popuppower/dashboard/remove',
                     [
                         'id' => $currentPageId,
-                        'configurationId' => $configuration->getUid()
+                        'configurationId' => $configuration->getUid(),
                     ]
                 )
             );
@@ -140,7 +140,7 @@ final class DashboardController extends ActionController
             $this->backendUriBuilder->buildUriFromRoutePath(
                 '/module/web/popuppower/dashboard',
                 [
-                    'id' => $currentPageId
+                    'id' => $currentPageId,
                 ]
             )
         );

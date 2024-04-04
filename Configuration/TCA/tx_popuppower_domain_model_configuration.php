@@ -12,7 +12,7 @@ return [
         'delete' => 'deleted',
         'iconfile' => 'EXT:popup_power/Resources/Public/Icons/Extension.gif',
         'origUid' => 't3_origuid',
-        'hideTable' => true
+        'hideTable' => true,
     ],
     'columns' => [
         'name' => [
@@ -23,7 +23,7 @@ return [
                 'eval' => 'trim',
                 'required' => true,
                 'max' => 256,
-                'default' => 'Default'
+                'default' => 'Default',
             ],
         ],
         'extend_to_subpages' => [
