@@ -99,7 +99,7 @@ return [
                         'addWhere' => 'AND pages.doktype = ' . \Slavlee\PopupPower\Registry\PopupRegistry::PAGETYPES_POPUP_CONTENT,
                     ],
                 ],
-            ]
+            ],
         ],
         't3ver_label' => [
             'displayCond' => 'FIELD:t3ver_label:REQ:true',

@@ -17,10 +17,10 @@ declare(strict_types=1);
 
 namespace Slavlee\PopupPower\Bootstrap;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\DataHandling\PageDoktypeRegistry;
 use Slavlee\PopupPower\Registry\PopupRegistry;
+use TYPO3\CMS\Core\DataHandling\PageDoktypeRegistry;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class ExtTables extends Base
 {
