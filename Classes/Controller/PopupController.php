@@ -42,6 +42,8 @@ final class PopupController extends ActionController
             return $this->htmlResponse($this->view->render('Nothing'));
         }
 
+        $this->view->assign('configuration', $configurationClosest);
+
         return $this->htmlResponse();
     }
 

@@ -1,0 +1,27 @@
+lib.popup_power.renderPage = COA
+lib.popup_power.renderPage {
+  10 = LOAD_REGISTER
+  10.pid {
+    field = pid
+
+    ifEmpty {
+      cObject = TEXT
+      cObject {
+        ifEmpty = 0
+        value.current = 1
+      }
+    }
+  }
+
+  20 = CONTENT
+  20 {
+    select {
+      orderBy = sorting
+      pidInList = {register:pid}
+      pidInList.insertData = 1
+    }
+    table = tt_content
+  }
+
+  90 = RESTORE_REGISTER
+}

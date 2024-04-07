@@ -32,17 +32,74 @@ return [
                 'type' => 'check',
             ],
         ],
-        'override' => [
-            'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_override',
+        'layout' => [
+            'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_layout',
             'config' => [
-                'type' => 'check',
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'default' => 'modal',
+                'items' => [
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:module_dashboard_form_layout_prependLabel',
+                        'value' => '',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_layout_I_0',
+                        'value' => 'modal',
+                    ],
+                ],
             ],
         ],
-        'is_root' => [
-            'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_is_root',
+        'position' => [
+            'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_position',
             'config' => [
-                'type' => 'check',
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'default' => 'center',
+                'items' => [
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:module_dashboard_form_position_prependLabel',
+                        'value' => '',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_position_I_0',
+                        'value' => 'center',
+                    ],
+                ],
             ],
+        ],
+        'behaviour_appearance' => [
+            'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_behaviour_appearance',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'default' => 'once',
+                'items' => [
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:module_dashboard_form_behaviour_appearance_prependLabel',
+                        'value' => '',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_behaviour_appearance_I_0',
+                        'value' => 'once',
+                    ],
+                ],
+            ],
+        ],
+        'popup_content' => [
+            'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_popup_content',
+            'config' => [
+                'type' => 'group',
+                'allowed' => 'pages',
+                'maxitems' => 1,
+                'minitems' => 1,
+                'size' => 1,
+                'suggestOptions' => [
+                    'default' => [
+                        'addWhere' => 'AND pages.doktype = ' . \Slavlee\PopupPower\Registry\PopupRegistry::PAGETYPES_POPUP_CONTENT,
+                    ],
+                ],
+            ]
         ],
         't3ver_label' => [
             'displayCond' => 'FIELD:t3ver_label:REQ:true',

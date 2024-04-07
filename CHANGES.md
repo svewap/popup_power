@@ -1,3 +1,8 @@
+### Version 0.0.4
+- [FEATURE] Add layout, position, behaviour_appearance field in configuration
+- [FEATURE] Add new page type to create content for popups
+- [FEATURE] Render popup content via lib.popup_power.renderPage Object
+
 ### Version 0.0.3
 - [FEATURE] Create Frontend Plugin and add it to PAGE, when popup is enabled
 - [BUGFIX] Renamed label in backend module for hidden field

@@ -13,6 +13,12 @@
 				<source>Please select a page</source>
 			</trans-unit>
 
+			<trans-unit id="module_dashboard_form_general_title" resname="module_dashboard_form_general_title">
+				<source>General settings</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_form_layout_title" resname="module_dashboard_form_layout_title">
+				<source>Layout settings</source>
+			</trans-unit>
 			<trans-unit id="module_dashboard_form_submit" resname="module_dashboard_form_submit">
 				<source>Save configuration</source>
 			</trans-unit>
@@ -25,6 +31,39 @@
 
 			<trans-unit id="tx_popuppower_domain_model_configuration_override" resname="tx_popuppower_domain_model_configuration_override">
 				<source>Override configuration</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_layout" resname="tx_popuppower_domain_model_configuration_layout">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_layout_I_0" resname="tx_popuppower_domain_model_configuration_layout_I_0">
+				<source>Modal</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_form_layout_prependLabel" resname="module_dashboard_form_layout_prependLabel">
+				<source>Choose layout...</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position" resname="tx_popuppower_domain_model_configuration_position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_0" resname="tx_popuppower_domain_model_configuration_position_I_0">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_form_position_prependLabel" resname="module_dashboard_form_position_prependLabel">
+				<source>Choose position...</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance" resname="tx_popuppower_domain_model_configuration_behaviour_appearance">
+				<source>Behaviour appearance</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0">
+				<source>once</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_form_behaviour_appearance_prependLabel" resname="module_dashboard_form_behaviour_appearance_prependLabel">
+				<source>Choose behaviour...</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_popup_content" resname="tx_popuppower_domain_model_configuration_popup_content">
+				<source>Popup content page</source>
+			</trans-unit>
+			<trans-unit id="module_dashboard_form_popup_content_prependLabel" resname="module_dashboard_form_popup_content_prependLabel">
+				<source>Choose page...</source>
 			</trans-unit>
         </body>
     </file>

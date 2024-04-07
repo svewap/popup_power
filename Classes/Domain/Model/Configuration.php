@@ -27,6 +27,21 @@ class Configuration extends AbstractEntity
     protected string $name;
 
     /**
+     * @var string
+     */
+    protected string $layout = 'modal';
+
+    /**
+     * @var string
+     */
+    protected string $position = 'center';
+
+    /**
+     * @var string
+     */
+    protected string $behaviourAppearance = 'once';
+
+    /**
      * @var bool
      */
     protected bool $extendToSubpages = false;
@@ -35,6 +50,8 @@ class Configuration extends AbstractEntity
      * @var bool
      */
     protected bool $hidden = false;
+
+    protected PopupContent $popupContent;
 
     /**
      * Get the value of extendToSubpages
@@ -125,5 +142,97 @@ class Configuration extends AbstractEntity
         }
 
         return $configuration;
+    }
+
+    /**
+     * Get the value of layout
+     *
+     * @return  string
+     */
+    public function getLayout()
+    {
+        return $this->layout;
+    }
+
+    /**
+     * Set the value of layout
+     *
+     * @param  string  $layout
+     *
+     * @return  self
+     */
+    public function setLayout(string $layout)
+    {
+        $this->layout = $layout;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of position
+     *
+     * @return  string
+     */
+    public function getPosition()
+    {
+        return $this->position;
+    }
+
+    /**
+     * Set the value of position
+     *
+     * @param  string  $position
+     *
+     * @return  self
+     */
+    public function setPosition(string $position)
+    {
+        $this->position = $position;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of behaviourAppearance
+     *
+     * @return  string
+     */
+    public function getBehaviourAppearance()
+    {
+        return $this->behaviourAppearance;
+    }
+
+    /**
+     * Set the value of behaviourAppearance
+     *
+     * @param  string  $behaviourAppearance
+     *
+     * @return  self
+     */
+    public function setBehaviourAppearance(string $behaviourAppearance)
+    {
+        $this->behaviourAppearance = $behaviourAppearance;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of popupContent
+     */
+    public function getPopupContent()
+    {
+        return $this->popupContent;
+    }
+
+    /**
+     * Set the value of popupContent
+     *
+     * @return  self
+     */
+    public function setPopupContent($popupContent)
+    {
+        $this->popupContent = $popupContent;
+
+        return $this;
     }
 }

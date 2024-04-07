@@ -21,6 +21,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Slavlee\PopupPower\Domain\Model\Configuration;
 use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
+use Slavlee\PopupPower\Domain\Repository\PopupContentRepository;
 use Slavlee\PopupPower\Utility\TYPO3\RepositoryUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Backend\Attribute\AsController;
@@ -37,8 +38,11 @@ final class DashboardController extends ActionController
         private readonly ModuleTemplateFactory $moduleTemplateFactory,
         private readonly ConfigurationRepository $configurationRepository,
         private readonly UriBuilder $backendUriBuilder,
-        private readonly PageRepository $pageRepository
-    ) {}
+        private readonly PageRepository $pageRepository,
+        private readonly PopupContentRepository $popupContentRepository
+    ) {
+        RepositoryUtility::disableRespectStoragePage($popupContentRepository);
+    }
 
     /**
      * Start page of the dashboard
@@ -76,6 +80,8 @@ final class DashboardController extends ActionController
             } else {
                 $this->view->assign('configuration', $configuration);
             }
+
+            $this->view->assign('popupContentPages', $this->popupContentRepository->findAll());
         }
 
         // Render template
