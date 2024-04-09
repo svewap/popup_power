@@ -1,3 +1,8 @@
-<div class="popuppower-container poppower-layout-{configuration.layout} poppower-position-{configuration.position}">
-    <f:render section="Content" />
+<f:asset.css identifier="popuppower-style" href="EXT:popup_power/Resources/Public/Css/style.css" />
+<f:asset.script identifier="popuppower-main" src="EXT:popup_power/Resources/Public/JavaScript/PopupPower.js" type="module" />
+<div id="popupPower" class="popuppower-container poppower-layout-{configuration.layout} poppower-position-{configuration.position}" data-settings="{popupPowerSettings}">
+    <div class="popuppower-btn-close"></div>
+    <div class="popuppower-container-inner">
+        <f:render section="Content" />
+    </div>
 </div>

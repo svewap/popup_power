@@ -1,0 +1,68 @@
+.popuppower-show {
+    display: block !important;
+}
+
+/***************************************************************
+ * MODAL - START
+ **************************************************************/
+.poppower-layout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    display: none;
+}
+
+.poppower-layout-modal > .popuppower-container-inner {
+    width: fit-content;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+    .poppower-layout-modal > div {
+        max-width: 80%;
+    }
+}
+/***************************************************************
+ * MODAL - END
+ **************************************************************/
+/***************************************************************
+ * CLOSE BUTTON - START
+ **************************************************************/
+.poppower-layout-modal > .popuppower-btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.popuppower-btn-close:before,
+.popuppower-btn-close:after {
+    position: absolute;
+    left: 1rem;
+    content: ' ';
+    height: 2rem;
+    width: 2px;
+    background-color: #fff;
+}
+
+.popuppower-btn-close:before {
+    transform: rotate(45deg);
+}
+
+.popuppower-btn-close:after {
+    transform: rotate(-45deg);
+}
+/***************************************************************
+ * CLOSE BUTTON - END
+ **************************************************************/

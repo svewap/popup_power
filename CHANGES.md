@@ -1,3 +1,6 @@
+### Version 0.0.5
+- [FEATURE] Add JS Modul to control appearance of popup
+
 ### Version 0.0.4
 - [FEATURE] Add layout, position, behaviour_appearance field in configuration
 - [FEATURE] Add new page type to create content for popups

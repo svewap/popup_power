@@ -19,6 +19,7 @@ namespace Slavlee\PopupPower\Controller;
 
 use Psr\Http\Message\ResponseInterface;
 use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
+use Slavlee\PopupPower\Utility\PopupPowerUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
@@ -26,7 +27,8 @@ final class PopupController extends ActionController
 {
     public function __construct(
         private readonly ConfigurationRepository $configurationRepository
-    ) {}
+    ) {
+    }
 
     /**
      * Show the popup, when enabled
@@ -43,6 +45,7 @@ final class PopupController extends ActionController
         }
 
         $this->view->assign('configuration', $configurationClosest);
+        $this->view->assign('popupPowerSettings', PopupPowerUtility::configurationToJsModuleSettings($configurationClosest));
 
         return $this->htmlResponse();
     }
