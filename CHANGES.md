@@ -1,3 +1,6 @@
+### Version 1.0.1
+- [BUGFIX] Improve appearance on small devices
+
 ### Version 1.0.0
 - [IMPORTANT] First stable version
 - [FEATURE] Base Appearance for Popup
