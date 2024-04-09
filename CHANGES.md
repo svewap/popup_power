@@ -1,3 +1,7 @@
+### Version 1.0.2
+- !!![IMPORTANT] Please clear injection cache, when upgrading from prio versions
+- [BUGFIX] Each popup configuration uses now different cookies to make it possible to use multiple popups on multiple pages
+
 ### Version 1.0.1
 - [BUGFIX] Improve appearance on small devices
 

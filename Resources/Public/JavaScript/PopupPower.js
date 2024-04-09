@@ -39,7 +39,7 @@ class PopupPower
   }
 
   saveCookie(settings) {
-    document.cookie = "popupPower = " + JSON.stringify(settings);
+    document.cookie = "popupPower" +  this.settings.identifier + " = " + JSON.stringify(settings);
   }
 
   getCookie() {
@@ -48,7 +48,7 @@ class PopupPower
     for(let i = 0; i < allCookies.length; i++) {
       let name = allCookies[i].split('=')[0].trim();
 
-      if (name == 'popupPower') {
+      if (name == 'popupPower' + this.settings.identifier) {
         return JSON.parse(allCookies[i].split('=')[1].trim());
       }
     }

@@ -18,15 +18,14 @@ declare(strict_types=1);
 namespace Slavlee\PopupPower\Controller;
 
 use Psr\Http\Message\ResponseInterface;
-use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
+use Slavlee\PopupPower\Domain\Service\ClosestConfigurationService;
 use Slavlee\PopupPower\Utility\PopupPowerUtility;
-use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 final class PopupController extends ActionController
 {
     public function __construct(
-        private readonly ConfigurationRepository $configurationRepository
+        private readonly ClosestConfigurationService $closestConfigurationService
     ) {}
 
     /**
@@ -35,8 +34,7 @@ final class PopupController extends ActionController
      */
     public function showAction(): ResponseInterface
     {
-        $rootlineIds = RootlineUtility::getPageIds($GLOBALS['TSFE']->id);
-        $configurationClosest = $this->configurationRepository->findByRootline($rootlineIds)->current();
+        $configurationClosest = $this->closestConfigurationService->get($GLOBALS['TSFE']->id);
 
         // if there is no configuration, then render nothing
         if (!$configurationClosest || $configurationClosest->getHidden()) {

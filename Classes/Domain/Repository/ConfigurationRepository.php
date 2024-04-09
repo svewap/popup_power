@@ -24,6 +24,24 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
 class ConfigurationRepository extends Repository
 {
     /**
+     * Find configuration by pid
+     * @param int $pid
+     * @return QueryResult
+     */
+    public function findByPid(int $pid): QueryResult
+    {
+        $query = $this->createQuery();
+        $query->getQuerySettings()->setRespectStoragePage(false);
+        $query->matching(
+            $query->logicalAnd(
+                $query->equals('pid', $pid),
+            )
+        );
+
+        return $query->execute();
+    }
+
+    /**
      * Find first configuration in the rootline
      * @param array $rootlineIds
      * @return QueryResult
