@@ -51,7 +51,15 @@ class Configuration extends AbstractEntity
      */
     protected bool $hidden = false;
 
+    /**
+     * @var PopupContent
+     */
     protected PopupContent $popupContent;
+
+    /**
+     * @var int
+     */
+    protected int $delay = 0;
 
     /**
      * Get the value of extendToSubpages
@@ -232,6 +240,30 @@ class Configuration extends AbstractEntity
     public function setPopupContent($popupContent)
     {
         $this->popupContent = $popupContent;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of delay
+     *
+     * @return  int
+     */
+    public function getDelay()
+    {
+        return $this->delay;
+    }
+
+    /**
+     * Set the value of delay
+     *
+     * @param  int  $delay
+     *
+     * @return  self
+     */
+    public function setDelay(int $delay)
+    {
+        $this->delay = $delay;
 
         return $this;
     }

@@ -11,3 +11,9 @@
     <label for="hidden" class="form-label"><f:translate key="tx_popuppower_domain_model_configuration_behaviour_appearance" extensionName="popup_power" /></label>
     <f:form.select property="behaviourAppearance" options="{once: '{f:translate(key:\'tx_popuppower_domain_model_configuration_behaviour_appearance_I_0\', extensionName: \'popup_power\')}'}" class="form-select" prependOptionLabel="{f:translate(key: 'module_dashboard_form_behaviour_appearance_prependLabel')}" prependOptionValue="" required="true" />
 </div>
+<div class="mb-3">
+    <label for="hidden" class="form-label"><f:translate key="tx_popuppower_domain_model_delay" extensionName="popup_power" /></label>
+    <f:form.textfield type="number" property="delay" class="form-control" additionalAttributes="{min: '0', step: '250'}" />
+    <div class="form-text"><f:translate key="tx_popuppower_domain_model_delay_description" extensionName="popup_power" /></div>
+</div>
+

@@ -5,5 +5,6 @@ CREATE TABLE tx_popuppower_domain_model_configuration(
 	`position` varchar(10) DEFAULT 'center' NOT NULL,
 	`behaviour_appearance` varchar(10) DEFAULT 'once' NOT NULL,
 	`extend_to_subpages` TINYINT DEFAULT '0' NOT NULL,
-	`popup_content` INT(11) DEFAULT '0' NOT NULL
+	`popup_content` INT(11) DEFAULT '0' NOT NULL,
+	`delay` int(11) DEFAULT '0' NOT NULL
 );

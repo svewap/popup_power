@@ -1,3 +1,9 @@
+### Version 1.0.0
+- [IMPORTANT] First stable version
+- [FEATURE] Base Appearance for Popup
+- [FEATURE] Add delay in config
+- [NOTICE] Add some css styling definition for inner container
+
 ### Version 0.0.5
 - [FEATURE] Add JS Modul to control appearance of popup
 - [FEATURE] Add basic styling for popup as modal
@@ -6,6 +12,7 @@
 - [FEATURE] Add layout, position, behaviour_appearance field in configuration
 - [FEATURE] Add new page type to create content for popups
 - [FEATURE] Render popup content via lib.popup_power.renderPage Object
+- [FEATURE] Set page id with Popup content
 
 ### Version 0.0.3
 - [FEATURE] Create Frontend Plugin and add it to PAGE, when popup is enabled

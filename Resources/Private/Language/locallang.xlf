@@ -62,6 +62,12 @@
 			<trans-unit id="tx_popuppower_domain_model_configuration_popup_content" resname="tx_popuppower_domain_model_configuration_popup_content">
 				<source>Popup content page</source>
 			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_delay" resname="tx_popuppower_domain_model_delay">
+				<source>Delay</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_delay_description" resname="tx_popuppower_domain_model_delay_description">
+				<source>in milliseconds</source>
+			</trans-unit>
 			<trans-unit id="module_dashboard_form_popup_content_prependLabel" resname="module_dashboard_form_popup_content_prependLabel">
 				<source>Choose page...</source>
 			</trans-unit>

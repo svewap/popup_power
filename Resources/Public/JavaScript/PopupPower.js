@@ -18,7 +18,9 @@ class PopupPower
     let cookie = this.getCookie();
 
     if (!cookie || cookie.behaviourAppearance == 'once' && cookie.showCount == 0) {
-      this.showPopup();
+      setTimeout(() => {
+        this.showPopup();
+      }, this.settings.delay);
     }
   }
 

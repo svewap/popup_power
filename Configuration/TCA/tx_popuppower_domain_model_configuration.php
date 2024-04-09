@@ -101,6 +101,13 @@ return [
                 ],
             ],
         ],
+        'delay' => [
+            'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_delay',
+            'description' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_delay_description',
+            'config' => [
+                'type' => 'number',
+            ],
+        ],
         't3ver_label' => [
             'displayCond' => 'FIELD:t3ver_label:REQ:true',
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.versionLabel',
@@ -125,6 +132,6 @@ return [
         ],
     ],
     'types' => [
-        0 => ['showitem' => 'hidden, name'],
+        0 => ['showitem' => 'hidden, name, extend_to_subpages, layout, position, behaviour_appearance, delay, popup_content'],
     ],
 ];

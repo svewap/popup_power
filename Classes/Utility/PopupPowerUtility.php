@@ -30,6 +30,7 @@ class PopupPowerUtility
     {
         $settings = [
             'behaviourAppearance' => $configuration->getBehaviourAppearance(),
+            'delay' => $configuration->getDelay(),
         ];
 
         return \json_encode($settings);

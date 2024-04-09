@@ -18,9 +18,14 @@
 			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance" resname="tx_popuppower_domain_model_configuration_behaviour_appearance">
 				<source>Behaviour appearance</source>
 			</trans-unit>
-
 			<trans-unit id="tx_popuppower_domain_model_popup_content" resname="tx_popuppower_domain_model_popup_content">
 				<source>Popup Power Content</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_delay" resname="tx_popuppower_domain_model_delay">
+				<source>Delay</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_delay_description" resname="tx_popuppower_domain_model_delay_description">
+				<source>in milliseconds</source>
 			</trans-unit>
         </body>
     </file>
