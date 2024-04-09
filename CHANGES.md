@@ -1,5 +1,6 @@
 ### Version 0.0.5
 - [FEATURE] Add JS Modul to control appearance of popup
+- [FEATURE] Add basic styling for popup as modal
 
 ### Version 0.0.4
 - [FEATURE] Add layout, position, behaviour_appearance field in configuration
