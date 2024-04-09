@@ -29,7 +29,7 @@ class PopupPowerUtility
     public static function configurationToJsModuleSettings(Configuration $configuration): string
     {
         $settings = [
-            'behaviourAppearance' => $configuration->getBehaviourAppearance()
+            'behaviourAppearance' => $configuration->getBehaviourAppearance(),
         ];
 
         return \json_encode($settings);

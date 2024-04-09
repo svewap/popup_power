@@ -27,8 +27,7 @@ final class PopupController extends ActionController
 {
     public function __construct(
         private readonly ConfigurationRepository $configurationRepository
-    ) {
-    }
+    ) {}
 
     /**
      * Show the popup, when enabled
