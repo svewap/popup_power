@@ -33,7 +33,7 @@ class ClosestConfigurationService
      * @param int $startPageId
      * @return Configuration
      */
-    public function get(int $startPageId): Configuration
+    public function get(int $startPageId): ?Configuration
     {
         // check if current page has a configuration
         // if so, then priorize it
@@ -46,6 +46,6 @@ class ClosestConfigurationService
         $rootlineIds = RootlineUtility::getPageIds($startPageId);
         $configurationClosest = $this->configurationRepository->findByRootline($rootlineIds)->current();
 
-        return $configurationClosest;
+        return $configurationClosest ? $configurationClosest : null;
     }
 }

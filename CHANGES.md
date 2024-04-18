@@ -1,3 +1,6 @@
+### Version 1.0.3
+- [BUGFIX] ClosestConfigurationService->get need to be able to return no configuration, if not found
+
 ### Version 1.0.2
 - !!![IMPORTANT] Please clear injection cache, when upgrading from prio versions
 - [BUGFIX] Each popup configuration uses now different cookies to make it possible to use multiple popups on multiple pages
