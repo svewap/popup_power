@@ -17,6 +17,4 @@ declare(strict_types=1);
 
 namespace Slavlee\PopupPower\Domain\Model\Dto;
 
-class LicenseData extends \stdClass
-{
-}
+class LicenseData extends \stdClass {}
