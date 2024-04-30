@@ -65,6 +65,26 @@ return [
                         'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_position_I_0',
                         'value' => 'center',
                     ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_position_I_1',
+                        'value' => 'center-left',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_position_I_2',
+                        'value' => 'center-right',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_position_I_3',
+                        'value' => 'bottom-left',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_position_I_4',
+                        'value' => 'bottom-center',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_position_I_5',
+                        'value' => 'bottom-right',
+                    ],
                 ],
             ],
         ],
@@ -82,6 +102,10 @@ return [
                     [
                         'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_behaviour_appearance_I_0',
                         'value' => 'once',
+                    ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_behaviour_appearance_I_1',
+                        'value' => 'always',
                     ],
                 ],
             ],

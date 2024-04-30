@@ -73,3 +73,30 @@
 /***************************************************************
  * CLOSE BUTTON - END
  **************************************************************/
+/***************************************************************
+ * MODAL POSITIONS - START
+ **************************************************************/
+.poppower-position-cleft.poppower-layout-modal > .popuppower-container-inner,
+.poppower-position-bleft.poppower-layout-modal > .popuppower-container-inner {
+    margin-left: 1rem;
+}
+
+.poppower-position-cright.poppower-layout-modal > .popuppower-container-inner,
+.poppower-position-bright.poppower-layout-modal > .popuppower-container-inner {
+    margin-right: 1rem;
+}
+
+.poppower-position-bleft.poppower-layout-modal,
+.poppower-position-bright.poppower-layout-modal,
+.poppower-position-bcenter.poppower-layout-modal {
+    align-items: flex-end;
+}
+
+.poppower-position-bleft.poppower-layout-modal > .popuppower-container-inner,
+.poppower-position-bright.poppower-layout-modal > .popuppower-container-inner,
+.poppower-position-bcenter.poppower-layout-modal > .popuppower-container-inner {
+    margin-bottom:  1rem;
+}
+/***************************************************************
+ * MODAL POSITIONS - END
+ **************************************************************/

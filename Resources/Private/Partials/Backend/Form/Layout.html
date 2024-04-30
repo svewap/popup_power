@@ -5,11 +5,18 @@
 </div>
 <div class="mb-3">
     <label for="hidden" class="form-label"><f:translate key="tx_popuppower_domain_model_configuration_position" extensionName="popup_power" /></label>
-    <f:form.select property="position" options="{center: '{f:translate(key:\'tx_popuppower_domain_model_configuration_position_I_0\', extensionName: \'popup_power\')}'}" class="form-select" prependOptionLabel="{f:translate(key: 'module_dashboard_form_position_prependLabel')}" prependOptionValue="" required="true" />
+    <f:form.select property="position" class="form-select" prependOptionLabel="{f:translate(key: 'module_dashboard_form_position_prependLabel')}" prependOptionValue="" required="true">
+        <f:form.select.option value="center"><f:translate key="tx_popuppower_domain_model_configuration_position_I_0" extensionName="popup_power" /></f:form.select.option>
+        <f:form.select.option value="cleft"><f:translate key="tx_popuppower_domain_model_configuration_position_I_1" extensionName="popup_power" /></f:form.select.option>
+        <f:form.select.option value="cright"><f:translate key="tx_popuppower_domain_model_configuration_position_I_2" extensionName="popup_power" /></f:form.select.option>
+        <f:form.select.option value="bleft"><f:translate key="tx_popuppower_domain_model_configuration_position_I_3" extensionName="popup_power" /></f:form.select.option>
+        <f:form.select.option value="bcenter"><f:translate key="tx_popuppower_domain_model_configuration_position_I_4" extensionName="popup_power" /></f:form.select.option>
+        <f:form.select.option value="bright"><f:translate key="tx_popuppower_domain_model_configuration_position_I_5" extensionName="popup_power" /></f:form.select.option>
+    </f:form.select>
 </div>
 <div class="mb-3">
     <label for="hidden" class="form-label"><f:translate key="tx_popuppower_domain_model_configuration_behaviour_appearance" extensionName="popup_power" /></label>
-    <f:form.select property="behaviourAppearance" options="{once: '{f:translate(key:\'tx_popuppower_domain_model_configuration_behaviour_appearance_I_0\', extensionName: \'popup_power\')}'}" class="form-select" prependOptionLabel="{f:translate(key: 'module_dashboard_form_behaviour_appearance_prependLabel')}" prependOptionValue="" required="true" />
+    <f:form.select property="behaviourAppearance" options="{once: '{f:translate(key:\'tx_popuppower_domain_model_configuration_behaviour_appearance_I_0\', extensionName: \'popup_power\')}', always: '{f:translate(key:\'tx_popuppower_domain_model_configuration_behaviour_appearance_I_1\', extensionName: \'popup_power\')}'}" class="form-select" prependOptionLabel="{f:translate(key: 'module_dashboard_form_behaviour_appearance_prependLabel')}" prependOptionValue="" required="true" />
 </div>
 <div class="mb-3">
     <label for="hidden" class="form-label"><f:translate key="tx_popuppower_domain_model_delay" extensionName="popup_power" /></label>

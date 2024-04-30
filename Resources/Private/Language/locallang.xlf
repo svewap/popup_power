@@ -47,6 +47,21 @@
 			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_0" resname="tx_popuppower_domain_model_configuration_position_I_0">
 				<source>Center</source>
 			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_1" resname="tx_popuppower_domain_model_configuration_position_I_1">
+				<source>Center Left</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_2" resname="tx_popuppower_domain_model_configuration_position_I_2">
+				<source>Center Right</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_3" resname="tx_popuppower_domain_model_configuration_position_I_3">
+				<source>Bottom left</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_4" resname="tx_popuppower_domain_model_configuration_position_I_4">
+				<source>Bottom center</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_5" resname="tx_popuppower_domain_model_configuration_position_I_5">
+				<source>Bottom right</source>
+			</trans-unit>
 			<trans-unit id="module_dashboard_form_position_prependLabel" resname="module_dashboard_form_position_prependLabel">
 				<source>Choose position...</source>
 			</trans-unit>
@@ -55,6 +70,9 @@
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0">
 				<source>once</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_1" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_1">
+				<source>always</source>
 			</trans-unit>
 			<trans-unit id="module_dashboard_form_behaviour_appearance_prependLabel" resname="module_dashboard_form_behaviour_appearance_prependLabel">
 				<source>Choose behaviour...</source>

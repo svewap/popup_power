@@ -25,7 +25,7 @@ class PopupPower
   controlPopupAppearance() {
     let cookie = this.getCookie();
 
-    if (!cookie || cookie.behaviourAppearance == 'once' && cookie.showCount == 0) {
+    if (!cookie || (cookie.behaviourAppearance == 'once' && cookie.showCount == 0)) {
       setTimeout(() => {
         this.showPopup();
       }, this.settings.delay);
@@ -42,8 +42,9 @@ class PopupPower
         behaviourAppearance: 'once',
         showCount: 1
       });
-      this.popup.remove();
     }
+
+    this.popup.remove();
   }
 
   saveCookie(settings) {

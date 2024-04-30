@@ -15,8 +15,32 @@
 			<trans-unit id="tx_popuppower_domain_model_configuration_position" resname="tx_popuppower_domain_model_configuration_position">
 				<source>Position</source>
 			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_0" resname="tx_popuppower_domain_model_configuration_position_I_0">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_1" resname="tx_popuppower_domain_model_configuration_position_I_1">
+				<source>Center Left</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_2" resname="tx_popuppower_domain_model_configuration_position_I_2">
+				<source>Center Right</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_3" resname="tx_popuppower_domain_model_configuration_position_I_3">
+				<source>Bottom left</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_4" resname="tx_popuppower_domain_model_configuration_position_I_4">
+				<source>Bottom center</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_5" resname="tx_popuppower_domain_model_configuration_position_I_5">
+				<source>Bottom right</source>
+			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance" resname="tx_popuppower_domain_model_configuration_behaviour_appearance">
 				<source>Behaviour appearance</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0">
+				<source>once</source>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_1" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_1">
+				<source>always</source>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_popup_content" resname="tx_popuppower_domain_model_popup_content">
 				<source>Popup Power Content</source>
