@@ -66,7 +66,6 @@ final class DashboardController extends ActionController
             // override configuration
             // and get page id with the closest configuration
             if (!$configuration) {
-
                 if ($this->licenseService->isValid(Configuration::class)) {
                     // Create new configuration object
                     // for form to override given setting
