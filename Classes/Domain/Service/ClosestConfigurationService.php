@@ -19,13 +19,16 @@ namespace Slavlee\PopupPower\Domain\Service;
 
 use Slavlee\PopupPower\Domain\Model\Configuration;
 use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
+use Slavlee\PopupPower\Utility\TYPO3\RepositoryUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 
 class ClosestConfigurationService
 {
     public function __construct(
         private readonly ConfigurationRepository $configurationRepository
-    ) {}
+    ) {
+        RepositoryUtility::disableRespectStoragePage($this->configurationRepository);
+    }
 
     /**
      * Return the closest configuration
@@ -47,5 +50,14 @@ class ClosestConfigurationService
         $configurationClosest = $this->configurationRepository->findByRootline($rootlineIds)->current();
 
         return $configurationClosest ? $configurationClosest : null;
+    }
+
+    /**
+     * Return total amount of configurations
+     * @return int
+     */
+    public function countAll(): int
+    {
+        return $this->configurationRepository->countAll();
     }
 }

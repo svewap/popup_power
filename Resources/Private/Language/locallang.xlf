@@ -71,6 +71,19 @@
 			<trans-unit id="module_dashboard_form_popup_content_prependLabel" resname="module_dashboard_form_popup_content_prependLabel">
 				<source>Choose page...</source>
 			</trans-unit>
+
+			<trans-unit id="dashboard_buy_pro" resname="dashboard_buy_pro">
+				<source>You have reached the limitation of the free version. To unlock all features, please buy the pro version. You can purchase the pro version under the link below:</source>
+			</trans-unit>
+			<trans-unit id="buy_pro_link" resname="buy_pro_link">
+				<source>Purchase PRO version</source>
+			</trans-unit>
+			<trans-unit id="free_configurations" resname="free_configurations">
+				<source>3 configurations</source>
+			</trans-unit>
+			<trans-unit id="pro_configurations" resname="pro_configurations">
+				<source>Infinite configurations</source>
+			</trans-unit>
         </body>
     </file>
 </xliff>

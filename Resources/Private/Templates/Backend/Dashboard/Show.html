@@ -14,7 +14,14 @@
                 <p class="alert alert-warning"><f:translate key="module_dashboard_nopageselected" extensionName="popup_power" /></p>
             </f:then>
             <f:else>
-                <f:render partial="Dashboard" arguments="{_all}" />
+                <f:if condition="{configuration}">
+                    <f:then>
+                        <f:render partial="Dashboard" arguments="{_all}" />
+                    </f:then>
+                    <f:else>
+                        <f:render partial="DashboardBuyPro" arguments="{_all}" />
+                    </f:else>
+                </f:if>
             </f:else>
         </f:if>
     </f:section>

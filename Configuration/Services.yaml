@@ -7,3 +7,6 @@ services:
 
   Slavlee\PopupPower\:
     resource: '../Classes/*'
+
+  Slavlee\PopupPower\Domain\Service\ClosestConfigurationService:
+    public: true

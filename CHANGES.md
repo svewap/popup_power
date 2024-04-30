@@ -1,3 +1,8 @@
+### Version dev-1.1.0-0
+- [IMPORTANT] Introduce LicenseService to limit several functionalities for FREE version
+- [FEATURE] In Free version you can only create 3 configurations
+- [FEATURE] AutoClose Popup, if clicked outside
+
 ### Version 1.0.3
 - [BUGFIX] ClosestConfigurationService->get need to be able to return no configuration, if not found
 

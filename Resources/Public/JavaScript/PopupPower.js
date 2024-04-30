@@ -1,7 +1,8 @@
 class PopupPower
 {
   constructor() {
-    this.settings = JSON.parse(document.querySelector('#popupPower').getAttribute('data-settings'));
+    this.popup = document.querySelector('#popupPower');
+    this.settings = JSON.parse(this.popup.getAttribute('data-settings'));
     this.initCloseButton();
     this.controlPopupAppearance();
   }
@@ -11,6 +12,13 @@ class PopupPower
       event.stopImmediatePropagation();
       event.preventDefault();
       this.closePopup();
+    });
+
+    // close modal also, when click outsite of it
+    this.popup.addEventListener("click", (event) => {
+      if (event.target == this.popup) {
+        this.closePopup();
+      }
     });
   }
 
@@ -25,7 +33,7 @@ class PopupPower
   }
 
   showPopup() {
-    document.querySelector('#popupPower').classList.add("popuppower-show");
+    this.popup.classList.add("popuppower-show");
   }
 
   closePopup() {
@@ -34,7 +42,7 @@ class PopupPower
         behaviourAppearance: 'once',
         showCount: 1
       });
-      document.querySelector('#popupPower').remove();
+      this.popup.remove();
     }
   }
 

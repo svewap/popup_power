@@ -22,6 +22,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Slavlee\PopupPower\Domain\Model\Configuration;
 use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
 use Slavlee\PopupPower\Domain\Repository\PopupContentRepository;
+use Slavlee\PopupPower\Domain\Service\LicenseService;
 use Slavlee\PopupPower\Utility\TYPO3\RepositoryUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Backend\Attribute\AsController;
@@ -39,7 +40,8 @@ final class DashboardController extends ActionController
         private readonly ConfigurationRepository $configurationRepository,
         private readonly UriBuilder $backendUriBuilder,
         private readonly PageRepository $pageRepository,
-        private readonly PopupContentRepository $popupContentRepository
+        private readonly PopupContentRepository $popupContentRepository,
+        private readonly LicenseService $licenseService
     ) {
         RepositoryUtility::disableRespectStoragePage($popupContentRepository);
     }
@@ -64,12 +66,14 @@ final class DashboardController extends ActionController
             // override configuration
             // and get page id with the closest configuration
             if (!$configuration) {
-                // Create new configuration object
-                // for form to override given setting
-                $configuration = GeneralUtility::makeInstance(Configuration::class);
-                $configuration->setPid($currentPageId);
-                $this->view->assign('configuration', $configuration);
 
+                if ($this->licenseService->isValid(Configuration::class)) {
+                    // Create new configuration object
+                    // for form to override given setting
+                    $configuration = GeneralUtility::makeInstance(Configuration::class);
+                    $configuration->setPid($currentPageId);
+                    $this->view->assign('configuration', $configuration);
+                }
                 // Get closest configuration to link to it
                 $rootlineIds = RootlineUtility::getPageIds($currentPageId);
                 $configurationClosest = $this->configurationRepository->findByRootline($rootlineIds)->current();
