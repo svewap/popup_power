@@ -1,3 +1,9 @@
+### Version 1.2.0
+- [FEATURE] Increase configuration limit up to 999, when popup_power_pro is loaded
+- [FEATURE] Add view folders in plugin typoscript
+- [FEATURE] Add Event to add fluid variables for backend dashboard
+- [FEATURE] If user change appearance behavoir from once back to always, then we delete the cookie
+
 ### Version 1.1.0
 - [IMPORTANT] Introduce LicenseService to limit several functionalities for FREE version
 - [FEATURE] In Free version you can only create 3 configurations

@@ -1,0 +1,7 @@
+plugin.tx_popuppower {
+  view {
+    layoutRootPath = EXT:popup_power/Resources/Private/Layouts/
+    partialRootPaths = EXT:popup_power/Resources/Private/Partials/
+    templateRootPaths = EXT:popup_power/Resources/Private/Templates/
+  }
+}

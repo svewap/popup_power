@@ -54,7 +54,7 @@ class Configuration extends AbstractEntity
     /**
      * @var PopupContent
      */
-    protected PopupContent $popupContent;
+    protected ?PopupContent $popupContent = null;
 
     /**
      * @var int

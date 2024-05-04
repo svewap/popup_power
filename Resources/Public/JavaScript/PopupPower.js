@@ -25,10 +25,14 @@ class PopupPower
   controlPopupAppearance() {
     let cookie = this.getCookie();
 
-    if (!cookie || (cookie.behaviourAppearance == 'once' && cookie.showCount == 0)) {
+    if (!cookie || this.settings.behaviourAppearance == 'always' || (this.settings.behaviourAppearance == 'once' && cookie.showCount == 0)) {
       setTimeout(() => {
         this.showPopup();
       }, this.settings.delay);
+    }
+
+    if (this.settings.behaviourAppearance == 'always') {
+      this.deleteCookie();
     }
   }
 
@@ -39,16 +43,21 @@ class PopupPower
   closePopup() {
     if (this.settings.behaviourAppearance == 'once') {
       this.saveCookie({
-        behaviourAppearance: 'once',
+        behaviourAppearance: this.settings.behaviourAppearance,
         showCount: 1
       });
+    }else {
+      // remove cookie, if not once
+      // we do this, because use might changed the
+      // behaviour
+      this.deleteCookie();
     }
 
     this.popup.remove();
   }
 
   saveCookie(settings) {
-    document.cookie = "popupPower" +  this.settings.identifier + " = " + JSON.stringify(settings);
+    document.cookie = 'popupPower' +  this.settings.identifier + ' = ' + JSON.stringify(settings);
   }
 
   getCookie() {
@@ -63,6 +72,10 @@ class PopupPower
     }
 
     return null;
+  }
+
+  deleteCookie() {
+    document.cookie = 'popupPower' +  this.settings.identifier + '=; Max-Age=-99999999;';
   }
 }
 

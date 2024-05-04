@@ -37,7 +37,7 @@ final class PopupController extends ActionController
         $configurationClosest = $this->closestConfigurationService->get($GLOBALS['TSFE']->id);
 
         // if there is no configuration, then render nothing
-        if (!$configurationClosest || $configurationClosest->getHidden()) {
+        if (!$configurationClosest || $configurationClosest->getHidden() || !$configurationClosest->getPopupContent()) {
             return $this->htmlResponse($this->view->render('Nothing'));
         }
 

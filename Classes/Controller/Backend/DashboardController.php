@@ -31,6 +31,7 @@ use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Core\Domain\Repository\PageRepository;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use Slavlee\PopupPower\Event\AssignVarsForDashboardEvent;
 
 #[AsController]
 final class DashboardController extends ActionController
@@ -86,6 +87,12 @@ final class DashboardController extends ActionController
 
             $this->view->assign('popupContentPages', $this->popupContentRepository->findAll());
         }
+
+        /**
+         * @var AssignVarsForDashboardEvent $event
+         */
+        $event = $this->eventDispatcher->dispatch(new AssignVarsForDashboardEvent());
+        $this->view->assignMultiple($event->getFluidVars());
 
         // Render template
         $moduleTemplate = $this->moduleTemplateFactory->create($this->request);
