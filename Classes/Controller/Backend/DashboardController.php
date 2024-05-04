@@ -23,6 +23,7 @@ use Slavlee\PopupPower\Domain\Model\Configuration;
 use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
 use Slavlee\PopupPower\Domain\Repository\PopupContentRepository;
 use Slavlee\PopupPower\Domain\Service\LicenseService;
+use Slavlee\PopupPower\Event\AssignVarsForDashboardEvent;
 use Slavlee\PopupPower\Utility\TYPO3\RepositoryUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Backend\Attribute\AsController;
@@ -31,7 +32,6 @@ use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Core\Domain\Repository\PageRepository;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use Slavlee\PopupPower\Event\AssignVarsForDashboardEvent;
 
 #[AsController]
 final class DashboardController extends ActionController

@@ -19,8 +19,8 @@ namespace Slavlee\PopupPower\Domain\Service;
 
 use Slavlee\PopupPower\Domain\Model\Configuration;
 use Slavlee\PopupPower\Domain\Model\Dto\LicenseData;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class LicenseService
 {
@@ -37,7 +37,7 @@ class LicenseService
             case Configuration::class:
                 if (ExtensionManagementUtility::isLoaded('popup_power_pro')) {
                     $licenseData->limit = 9999;
-                }else {
+                } else {
                     $licenseData->limit = 3;
                 }
                 break;
