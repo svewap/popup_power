@@ -1,6 +1,7 @@
 class PopupPower
 {
   constructor() {
+    this.hooks = this.getHooks();
     this.popup = document.querySelector('#popupPower');
     this.settings = JSON.parse(this.popup.getAttribute('data-settings'));
     this.initCloseButton();
@@ -23,6 +24,11 @@ class PopupPower
   }
 
   controlPopupAppearance() {
+    if (typeof this.hooks.controlPopupAppearance != 'undefined') {
+      this.hooks.controlPopupAppearance(this);
+      return;
+    }
+
     let cookie = this.getCookie();
 
     if (!cookie || this.settings.behaviourAppearance == 'always' || (this.settings.behaviourAppearance == 'once' && cookie.showCount == 0)) {
@@ -41,15 +47,18 @@ class PopupPower
   }
 
   closePopup() {
+    if (typeof this.hooks.closePopup != 'undefined') {
+      this.hooks.closePopup(this);
+      return;
+    }
+
     if (this.settings.behaviourAppearance == 'once') {
       this.saveCookie({
         behaviourAppearance: this.settings.behaviourAppearance,
         showCount: 1
       });
-    }else {
-      // remove cookie, if not once
-      // we do this, because use might changed the
-      // behaviour
+    }else if(this.settings.behaviourAppearance == 'always') {
+      // remove cookie, if always
       this.deleteCookie();
     }
 
@@ -76,6 +85,14 @@ class PopupPower
 
   deleteCookie() {
     document.cookie = 'popupPower' +  this.settings.identifier + '=; Max-Age=-99999999;';
+  }
+
+  getHooks() {
+    if (typeof document.slavleePopupPowerHooks != 'undefined') {
+      return document.slavleePopupPowerHooks;
+    }
+
+    return {};
   }
 }
 

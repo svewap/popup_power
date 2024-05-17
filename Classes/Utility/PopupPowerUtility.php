@@ -17,8 +17,11 @@ declare(strict_types=1);
 
 namespace Slavlee\PopupPower\Utility;
 
+use Psr\EventDispatcher\EventDispatcherInterface;
 use Slavlee\PopupPower\Domain\Model\Configuration;
+use Slavlee\PopupPower\Event\ChangeConfigurationToJsModuleSettingsEvent;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class PopupPowerUtility
 {
@@ -34,6 +37,13 @@ class PopupPowerUtility
             'delay' => $configuration->getDelay(),
             'identifier' => (string)$configuration->getUid(),
         ];
+
+        $eventDispatcher = GeneralUtility::makeInstance(EventDispatcherInterface::class);
+        $event = $eventDispatcher->dispatch(
+            new ChangeConfigurationToJsModuleSettingsEvent($settings, $configuration),
+        );
+
+        $settings = $event->getSettings();
 
         return \json_encode($settings);
     }
