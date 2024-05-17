@@ -3,6 +3,11 @@
         <p class="m-0"><a href="{be:moduleLink(route: 'web_popuppower_dashboard', arguments: '{id:pageClosest.uid}')}"><f:translate key="module_dashboard_configuration_closest" extensionName="popup_power" arguments="{0: pageClosest.title, 1: pageClosest.uid}" /></a></p>
     </div>
 </f:if>
+<f:if condition="{isProVersionInstalled}">
+    <f:else>
+        <p class="alert alert-warning"><f:link.external uri="https://popup-power.slavlee.de/free-vs-pro" target="_blank" class="fw-bold"><f:translate key="marketing_buypro" extensionName="popup_power"/></f:link.external></p>
+    </f:else>
+</f:if>
 <f:form action="save" method="POST" name="configuration" object="{configuration}" enctype="multipart/form-data">
     <f:render partial="Form/GeneralSettings" arguments="{_all}" />
     <f:render partial="Form/Layout" arguments="{_all}" />

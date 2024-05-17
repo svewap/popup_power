@@ -18,6 +18,7 @@ declare(strict_types=1);
 namespace Slavlee\PopupPower\Utility;
 
 use Slavlee\PopupPower\Domain\Model\Configuration;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 class PopupPowerUtility
 {
@@ -35,5 +36,14 @@ class PopupPowerUtility
         ];
 
         return \json_encode($settings);
+    }
+
+    /**
+     * Return true, if popup_power_pro is installed
+     * @return bool
+     */
+    public static function isProVersionInstalled(): bool
+    {
+        return ExtensionManagementUtility::isLoaded('popup_power_pro');
     }
 }

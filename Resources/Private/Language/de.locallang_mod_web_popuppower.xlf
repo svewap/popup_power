@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:popup_power/Resources/Private/Language/de.locallang_mod_web_popuppower.xlf" date="2024-05-17T10:58:51Z" product-name="popup_power">
+        <header/>
+        <body>
+			<trans-unit id="mlang_labels_tabdescr" resname="mlang_labels_tabdescr">
+				<target>Dashboard-Modul für slavlee/popup-power - Erweiterung.</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel" resname="mlang_tabs_tab">
+				<target>Modul zur slavlee/popup-power - Erweiterung.</target>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

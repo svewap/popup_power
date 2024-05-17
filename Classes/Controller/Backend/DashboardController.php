@@ -24,6 +24,7 @@ use Slavlee\PopupPower\Domain\Repository\ConfigurationRepository;
 use Slavlee\PopupPower\Domain\Repository\PopupContentRepository;
 use Slavlee\PopupPower\Domain\Service\LicenseService;
 use Slavlee\PopupPower\Event\AssignVarsForDashboardEvent;
+use Slavlee\PopupPower\Utility\PopupPowerUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RepositoryUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
 use TYPO3\CMS\Backend\Attribute\AsController;
@@ -85,6 +86,7 @@ final class DashboardController extends ActionController
                 $this->view->assign('configuration', $configuration);
             }
 
+            $this->view->assign('isProVersionInstalled', PopupPowerUtility::isProVersionInstalled());
             $this->view->assign('popupContentPages', $this->popupContentRepository->findAll());
         }
 

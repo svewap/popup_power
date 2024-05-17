@@ -1,122 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="EXT:popup_power/Resources/Private/Language/locallang.xlf" date="2024-04-04T10:58:51Z" product-name="popup_power">
+    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:popup_power/Resources/Private/Language/de.locallang.xlf" date="2024-05-17T10:58:51Z" product-name="popup_power">
         <header/>
         <body>
-			<trans-unit id="module_dashboard_title" resname="module_dashboard_title">
-				<source>Popup Power Dashboard</source>
-			</trans-unit>
 			<trans-unit id="module_dashboard_description" resname="module_dashboard_description">
-				<source>This is the dashboard for the slavlee/popup-power extension. Here you can configure the popups for every single TYPO3 page.</source>
+				<target>Dies ist das Dashboard für die Erweiterung slavlee/popup-power. Hier können Sie die Popups für jede einzelne TYPO3-Seite konfigurieren.</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_nopageselected" resname="module_dashboard_nopageselected">
-				<source>Please select a page</source>
+				<target>Bitte wählen Sie eine TYPO3 Seite</target>
 			</trans-unit>
 
 			<trans-unit id="module_dashboard_form_general_title" resname="module_dashboard_form_general_title">
-				<source>General settings</source>
+				<target>Allgemeine Einstellungen</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_form_layout_title" resname="module_dashboard_form_layout_title">
-				<source>Layout settings</source>
+				<target>Layout Einstellungen</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_form_submit" resname="module_dashboard_form_submit">
-				<source>Save configuration</source>
+				<target>Konfiguration speichern</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_form_remove" resname="module_dashboard_form_remove">
-				<source>Remove configuration</source>
+				<target>Konfiguration entfernen</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_configuration_closest" resname="module_dashboard_configuration_closest">
-				<source>This page has no individual configuration. The configuration is inherited from page: '%s' (ID: '%s').</source>
+				<target>Diese Seite hat keine eigene Konfiguration. Die Konfiguration wird von der Seite übernommen: '%s' (ID: '%s').</target>
 			</trans-unit>
 
 			<trans-unit id="tx_popuppower_domain_model_configuration_override" resname="tx_popuppower_domain_model_configuration_override">
-				<source>Override configuration</source>
-			</trans-unit>
-			<trans-unit id="tx_popuppower_domain_model_configuration_layout" resname="tx_popuppower_domain_model_configuration_layout">
-				<source>Layout</source>
-			</trans-unit>
-			<trans-unit id="tx_popuppower_domain_model_configuration_layout_I_0" resname="tx_popuppower_domain_model_configuration_layout_I_0">
-				<source>Modal</source>
+				<target>Konfiguration überschreiben</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_form_layout_prependLabel" resname="module_dashboard_form_layout_prependLabel">
-				<source>Choose layout...</source>
-			</trans-unit>
-			<trans-unit id="tx_popuppower_domain_model_configuration_position" resname="tx_popuppower_domain_model_configuration_position">
-				<source>Position</source>
+				<target>Layout auswählen...</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_0" resname="tx_popuppower_domain_model_configuration_position_I_0">
-				<source>Center</source>
+				<target>Mitte</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_1" resname="tx_popuppower_domain_model_configuration_position_I_1">
-				<source>Center Left</source>
+				<target>Mitte links</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_2" resname="tx_popuppower_domain_model_configuration_position_I_2">
-				<source>Center Right</source>
+				<target>Mitte rechts</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_3" resname="tx_popuppower_domain_model_configuration_position_I_3">
-				<source>Bottom left</source>
+				<target>Unten links</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_4" resname="tx_popuppower_domain_model_configuration_position_I_4">
-				<source>Bottom center</source>
+				<target>Unten Mitte</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_5" resname="tx_popuppower_domain_model_configuration_position_I_5">
-				<source>Bottom right</source>
+				<target>Unten rechts</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_form_position_prependLabel" resname="module_dashboard_form_position_prependLabel">
-				<source>Choose position...</source>
+				<target>Position wählen...</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance" resname="tx_popuppower_domain_model_configuration_behaviour_appearance">
-				<source>Behaviour appearance</source>
+				<target>Erscheinungsverhalten</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0">
-				<source>once</source>
+				<target>einmalig</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_1" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_1">
-				<source>always</source>
+				<target>immer</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_form_behaviour_appearance_prependLabel" resname="module_dashboard_form_behaviour_appearance_prependLabel">
-				<source>Choose behaviour...</source>
+				<target>Verhalten auswählen...</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_configuration_popup_content" resname="tx_popuppower_domain_model_configuration_popup_content">
-				<source>Popup content page</source>
+				<target>Popup-Inhaltsseite</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_delay" resname="tx_popuppower_domain_model_delay">
-				<source>Delay</source>
+				<target>Verzögerung</target>
 			</trans-unit>
 			<trans-unit id="tx_popuppower_domain_model_delay_description" resname="tx_popuppower_domain_model_delay_description">
-				<source>in milliseconds</source>
+				<target>in Millisekunden</target>
 			</trans-unit>
 			<trans-unit id="module_dashboard_form_popup_content_prependLabel" resname="module_dashboard_form_popup_content_prependLabel">
-				<source>Choose page...</source>
+				<target>Seite wählen...</target>
 			</trans-unit>
 
 			<trans-unit id="dashboard_buy_pro" resname="dashboard_buy_pro">
-				<source>You have reached the limitation of the free version. To unlock all features, please buy the pro version. You can purchase the pro version under the link below:</source>
+				<target>Sie haben das Limit der kostenlosen Version erreicht. Um alle Funktionen freizuschalten, kaufen Sie bitte die Pro-Version. Sie können die Pro-Version unter dem folgenden Link erwerben:</target>
 			</trans-unit>
 			<trans-unit id="marketing_buypro" resname="marketing_buypro">
-				<source>Buy the PRO version to unlock all features</source>
+				<target>Kaufen Sie die PRO-Version, um alle Funktionen freizuschalten</target>
 			</trans-unit>
 
 			<trans-unit id="buy_pro_link" resname="buy_pro_link">
-				<source>Purchase PRO version</source>
+				<target>PRO-Version kaufen</target>
 			</trans-unit>
 			<trans-unit id="free_configurations" resname="free_configurations">
-				<source>3 configurations</source>
+				<target>3 Konfigurationen</target>
 			</trans-unit>
 			<trans-unit id="pro_configurations" resname="pro_configurations">
-				<source>Infinite configurations</source>
+				<target>Unendliche Konfigurationen</target>
 			</trans-unit>
 			<trans-unit id="free_animations" resname="free_animations">
-				<source>No animations</source>
+				<target>Keine Animationen</target>
 			</trans-unit>
 			<trans-unit id="pro_animations" resname="pro_animations">
-				<source>Fade In Animations</source>
+				<target>Fade In Animationen</target>
 			</trans-unit>
 			<trans-unit id="free_newfeatures" resname="free_newfeatures">
-				<source>No new features</source>
+				<target>Keine neuen Funktionen</target>
 			</trans-unit>
 			<trans-unit id="pro_newfeatures" resname="pro_newfeatures">
-				<source>A lot more to come</source>
+				<target>Es wird noch viel mehr kommen</target>
 			</trans-unit>
         </body>
     </file>

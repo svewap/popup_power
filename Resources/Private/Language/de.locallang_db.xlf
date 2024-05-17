@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:popup_power/Resources/Private/Language/de.locallang_db.xlf" date="2024-05-17T10:58:51Z" product-name="popup_power">
+        <header/>
+        <body>
+			<trans-unit id="tx_popuppower_domain_model_configuration" resname="tx_popuppower_domain_model_configuration">
+				<target>Konfiguration</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_0" resname="tx_popuppower_domain_model_configuration_position_I_0">
+				<target>Mitte</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_1" resname="tx_popuppower_domain_model_configuration_position_I_1">
+				<target>Mitte links</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_2" resname="tx_popuppower_domain_model_configuration_position_I_2">
+				<target>Mitte rechts</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_3" resname="tx_popuppower_domain_model_configuration_position_I_3">
+				<target>Unten mittig</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_4" resname="tx_popuppower_domain_model_configuration_position_I_4">
+				<target>Unten center</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_position_I_5" resname="tx_popuppower_domain_model_configuration_position_I_5">
+				<target>Unten rechts</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance" resname="tx_popuppower_domain_model_configuration_behaviour_appearance">
+				<target>Verhaltensart</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_0">
+				<target>einmalig</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_behaviour_appearance_I_1" resname="tx_popuppower_domain_model_configuration_behaviour_appearance_I_1">
+				<target>immer</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_popup_content" resname="tx_popuppower_domain_model_popup_content">
+				<target>Popup-Inhaltsseite</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_delay" resname="tx_popuppower_domain_model_delay">
+				<target>Verzögerung</target>
+			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_delay_description" resname="tx_popuppower_domain_model_delay_description">
+				<target>in Millisekunden</target>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

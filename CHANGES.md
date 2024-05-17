@@ -1,3 +1,8 @@
+### Version 1.2.3
+- [NOTICE] Add german translation
+- [NOTICE] Extend Free vs. Pro table
+- [NOTICE] Add Buy Pro notice on Dashboard, if no popup-power-pro is installed
+
 ### Version 1.2.2
 - [NOTICE] Changed Buy Pro Version URL
 
