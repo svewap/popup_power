@@ -1,3 +1,6 @@
+### Version 1.2.1
+- [NOTICE] Add Buy Pro Version Section and Link
+
 ### Version 1.2.0
 - [FEATURE] Increase configuration limit up to 999, when popup_power_pro is loaded
 - [FEATURE] Add view folders in plugin typoscript
