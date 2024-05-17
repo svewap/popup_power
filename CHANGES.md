@@ -1,3 +1,6 @@
+### Version 1.2.2
+- [NOTICE] Changed Buy Pro Version URL
+
 ### Version 1.2.1
 - [NOTICE] Add Buy Pro Version Section and Link
 

@@ -20,7 +20,7 @@ Download and install the [extension][1] with the extension manager module.
 
 **Links**
 - [Preview all features](https://popup-power.slavlee.de/demo)
-- [Buy the PRO Version](https://www.digistore24.com/product/552482)
+- [Buy the PRO Version](https://popup-power.slavlee.de/buy-pro)
 
 ## 4 Changelog
 The changelogs can be found inside the [CHANGES.md](CHANGES.md) file.

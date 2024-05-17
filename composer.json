@@ -1,7 +1,7 @@
 {
     "name": "slavlee/popup-power",
     "type": "typo3-cms-extension",
-    "description": "Powerful TYPO3 extension to display popups. Buy the PRO Version here: https://www.digistore24.com/product/552482",
+    "description": "Powerful TYPO3 extension to display popups. Buy the PRO Version here: https://popup-power.slavlee.de/buy-pro",
     "license": "GPL-2.0-or-later",
     "require": {
         "php": "^8.1",
