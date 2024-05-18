@@ -1,7 +1,8 @@
 /***************************************************************
- * MODAL - START
+ * MODAL / Popup - START
  **************************************************************/
-.poppower-layout-modal {
+.poppower-layout-modal,
+.poppower-layout-popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,12 +16,24 @@
     transition: opacity 1s ease-out;
 }
 
-.poppower-layout-modal.popuppower-show {
+.poppower-layout-popup {
+    background: none;
+    width: fit-content;
+    height: auto;
+}
+
+.poppower-layout-modal.popuppower-show,
+.poppower-layout-popup.popuppower-show {
     opacity: 1;
     height: 100%;
 }
 
-.poppower-layout-modal > .popuppower-container-inner {
+.poppower-layout-popup.popuppower-show {
+    height: auto;
+}
+
+.poppower-layout-modal > .popuppower-container-inner,
+.poppower-layout-popup > .popuppower-container-inner {
     width: fit-content;
     max-width: 90%;
     margin-left: auto;
@@ -34,17 +47,18 @@
 }
 
 @media screen and (min-width: 576px) {
-    .poppower-layout-modal > div {
+    .poppower-layout-modal > div,
+    .poppower-layout-popup > div {
         max-width: 80%;
     }
 }
 /***************************************************************
- * MODAL - END
+ * MODAL / Popup - END
  **************************************************************/
 /***************************************************************
  * CLOSE BUTTON - START
  **************************************************************/
-.poppower-layout-modal > .popuppower-btn-close {
+.popuppower-container > .popuppower-btn-close {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -70,33 +84,148 @@
 .popuppower-btn-close:after {
     transform: rotate(-45deg);
 }
+
+/* Layout: Popup - START */
+.poppower-layout-popup > .popuppower-btn-close {
+    top: 0.5rem;
+    right: unset;
+    left: calc(50% - 2.5rem);
+    bottom: unset;
+    z-index: 1;
+}
+
+.poppower-layout-popup > .popuppower-btn-close:before,
+.poppower-layout-popup > .popuppower-btn-close:after {
+    background-color: #000;
+}
+
+.poppower-layout-popup.poppower-position-center > .popuppower-btn-close {
+    top: calc(-50% + 0.5rem);
+    right: unset;
+    left: calc(50% - 2.5rem);
+    bottom: unset;
+}
+
+.poppower-layout-popup.poppower-position-cleft > .popuppower-btn-close {
+    top: calc(-50% + 0.5rem);
+    right: 4.5rem;
+    left: unset;
+    bottom: unset;
+}
+
+.poppower-layout-popup.poppower-position-cright > .popuppower-btn-close {
+    top: calc(-50% + 0.5rem);
+    right: 1.5rem;
+    left: unset;
+    bottom: unset;
+}
+
+.poppower-layout-popup.poppower-position-bleft > .popuppower-btn-close {
+    top: 0.5rem;
+    right: 4.5rem;
+    left: unset;
+    bottom: unset;
+}
+
+.poppower-layout-popup.poppower-position-bright > .popuppower-btn-close {
+    top: 0.5rem;
+    right: 1.5rem;
+    left: unset;
+    bottom: unset;
+}
+/* Layout: Popup - END */
 /***************************************************************
  * CLOSE BUTTON - END
  **************************************************************/
 /***************************************************************
  * MODAL POSITIONS - START
  **************************************************************/
-.poppower-position-cleft.poppower-layout-modal > .popuppower-container-inner,
-.poppower-position-bleft.poppower-layout-modal > .popuppower-container-inner {
+.poppower-position-cleft > .popuppower-container-inner,
+.poppower-position-bleft > .popuppower-container-inner {
     margin-left: 1rem;
 }
 
-.poppower-position-cright.poppower-layout-modal > .popuppower-container-inner,
-.poppower-position-bright.poppower-layout-modal > .popuppower-container-inner {
+.poppower-position-cright > .popuppower-container-inner,
+.poppower-position-bright > .popuppower-container-inner {
     margin-right: 1rem;
 }
 
-.poppower-position-bleft.poppower-layout-modal,
-.poppower-position-bright.poppower-layout-modal,
-.poppower-position-bcenter.poppower-layout-modal {
+.poppower-position-bleft,
+.poppower-position-bright,
+.poppower-position-bcenter {
     align-items: flex-end;
 }
 
-.poppower-position-bleft.poppower-layout-modal > .popuppower-container-inner,
-.poppower-position-bright.poppower-layout-modal > .popuppower-container-inner,
-.poppower-position-bcenter.poppower-layout-modal > .popuppower-container-inner {
+.poppower-position-bleft > .popuppower-container-inner,
+.poppower-position-bright > .popuppower-container-inner,
+.poppower-position-bcenter > .popuppower-container-inner {
     margin-bottom:  1rem;
 }
 /***************************************************************
  * MODAL POSITIONS - END
+ **************************************************************/
+/***************************************************************
+ * POPUP POSITIONS - START
+ **************************************************************/
+/* Center - START */
+.poppower-layout-popup.poppower-position-center {
+    top: 50%;
+    left: 50%;
+}
+
+.poppower-layout-popup.poppower-position-center > .popuppower-container-inner {
+    transform: translate(-50%, -50%);
+}
+/* Center - END */
+
+/* Center Left - START */
+.poppower-layout-popup.poppower-position-cleft {
+    top: 50%;
+    left: 0;
+}
+
+.poppower-layout-popup.poppower-position-cleft > .popuppower-container-inner,
+.poppower-layout-popup.poppower-position-cright > .popuppower-container-inner {
+    transform: translateY(-50%);
+}
+/* Center Left - END */
+
+/* Center Right - START */
+.poppower-layout-popup.poppower-position-cright {
+    top: 50%;
+    right: 0;
+    left: unset;
+}
+/* Center Right - END */
+
+/* Bottom Left - START */
+.poppower-layout-popup.poppower-position-bleft {
+    top: unset;
+    bottom: 0;
+    left: 0;
+}
+/* Bottom Left - END */
+
+/* Bottom Right - START */
+.poppower-layout-popup.poppower-position-bright {
+    top: unset;
+    bottom: 0;
+    left: unset;
+    right: 0;
+}
+/* Bottom Right - END */
+
+/* Bottom Center - START */
+.poppower-layout-popup.poppower-position-bcenter  {
+    top: unset;
+    bottom: 0;
+    left: 50%;
+}
+
+.poppower-layout-popup.poppower-position-bcenter > .popuppower-container-inner {
+    transform: translateX(-50%);
+}
+/* Bottom Center - END */
+/***************************************************************
+ * POPUP POSITIONS - END
  **************************************************************/

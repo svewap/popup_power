@@ -1,6 +1,7 @@
 ### Version dev-1.3.0
 - [FEATURE] Add Event to change Module Settings in DOM
 - [FEATURE] Add Hooks for PopupPro JS Module: controlPopupAppearance, closePopup
+- [FEATURE] Add new Layout: Popup
 
 ### Version 1.2.3
 - [NOTICE] Add german translation

@@ -16,6 +16,7 @@ declare(strict_types=1);
  */
 
 namespace Slavlee\PopupPower\Event;
+
 use Slavlee\PopupPower\Domain\Model\Configuration;
 
 final class ChangeConfigurationToJsModuleSettingsEvent
@@ -30,7 +31,8 @@ final class ChangeConfigurationToJsModuleSettingsEvent
      */
     private Configuration $configuration;
 
-    public function __construct(array $settings, Configuration $configuration) {
+    public function __construct(array $settings, Configuration $configuration)
+    {
         $this->settings = $settings;
         $this->configuration = $configuration;
     }
