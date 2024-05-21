@@ -93,7 +93,7 @@ final class DashboardController extends ActionController
         /**
          * @var AssignVarsForDashboardEvent $event
          */
-        $event = $this->eventDispatcher->dispatch(new AssignVarsForDashboardEvent());
+        $event = $this->eventDispatcher->dispatch(new AssignVarsForDashboardEvent($configuration));
         $this->view->assignMultiple($event->getFluidVars());
 
         // Render template

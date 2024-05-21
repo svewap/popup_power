@@ -16,10 +16,24 @@ declare(strict_types=1);
  */
 
 namespace Slavlee\PopupPower\Event;
+use Slavlee\PopupPower\Domain\Model\Configuration;
 
 final class AssignVarsForDashboardEvent
 {
+    /**
+     * @var Configuration
+     */
+    private Configuration $configuration;
+
+    /**
+     * @var array
+     */
     private array $fluidVars = [];
+
+    public function __construct(Configuration $configuration)
+    {
+        $this->configuration = $configuration;
+    }
 
     public function getFluidVars(): array
     {
@@ -29,5 +43,29 @@ final class AssignVarsForDashboardEvent
     public function setFluidVars(array $fluidVars): void
     {
         $this->fluidVars = $fluidVars;
+    }
+
+    /**
+     * Get the value of configuration
+     *
+     * @return  Configuration
+     */
+    public function getConfiguration(): Configuration
+    {
+        return $this->configuration;
+    }
+
+    /**
+     * Set the value of configuration
+     *
+     * @param  Configuration  $configuration
+     *
+     * @return  self
+     */
+    public function setConfiguration(Configuration $configuration): AssignVarsForDashboardEvent
+    {
+        $this->configuration = $configuration;
+
+        return $this;
     }
 }
