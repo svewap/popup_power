@@ -16,6 +16,7 @@ declare(strict_types=1);
  */
 
 namespace Slavlee\PopupPower\Event;
+
 use Slavlee\PopupPower\Domain\Model\Configuration;
 
 final class AssignVarsForDashboardEvent
