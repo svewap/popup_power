@@ -1,4 +1,4 @@
-### Version dev-1.3.0
+### Version 1.3.0
 - [IMPORTANT] AssignVarsForDashboardEvent: Add Configuration in Constructor as required
 - [FEATURE] Add Event to change Module Settings in DOM
 - [FEATURE] Add Hooks for PopupPro JS Module: controlPopupAppearance, closePopup
