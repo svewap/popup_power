@@ -23,9 +23,10 @@ Download and install the [extension][1] with the extension manager module.
 - [Buy the PRO Version](https://popup-power.slavlee.de/buy-pro)
 
 ## Explore more
-If you are looking for awesome and easy to use TYPO3 templates and extensions, then visit: [T3 Templates][3]
+If you are looking for awesome and easy to use TYPO3 templates and extensions, then visit: [T3 Templates][2]
 
 ## 4 Changelog
 The changelogs can be found inside the [CHANGES.md](CHANGES.md) file.
 
 [1]: https://extensions.typo3.org/extension/popup_power
+[2]: https://t3templates.de/en/products
