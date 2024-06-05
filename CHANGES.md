@@ -1,3 +1,6 @@
+### Version 1.3.1
+- [BUGFIX] Backend module access comma separated value is not possbile anymore. Set to user
+
 ### Version 1.3.0
 - [IMPORTANT] AssignVarsForDashboardEvent: Add Configuration in Constructor as required
 - [FEATURE] Add Event to change Module Settings in DOM

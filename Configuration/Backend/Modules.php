@@ -6,7 +6,7 @@ return [
     'web_popuppower_dashboard' => [
         'parent' => 'web',
         'position' => 'bottom',
-        'access' => 'user,group',
+        'access' => 'user',
         'path' => '/module/web/popuppower/dashboard',
         'iconIdentifier' => 'web-popuppower-dashboard',
         'labels' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_mod_web_popuppower.xlf',
