@@ -6,21 +6,31 @@ class PopupPower
     this.settings = JSON.parse(this.popup.getAttribute('data-settings'));
     this.initCloseButton();
     this.controlPopupAppearance();
+
+    window.popupPower = this;
+    let popupPowerInitEvent = new Event("popuppower-init");
+    document.dispatchEvent(popupPowerInitEvent);
   }
 
   initCloseButton() {
-    document.querySelector('.popuppower-btn-close').addEventListener("click", (event) => {
-      event.stopImmediatePropagation();
-      event.preventDefault();
-      this.closePopup();
-    });
+    let closeBtn = document.querySelector('.popuppower-btn-close');
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", (event) => {
+        event.stopImmediatePropagation();
+        event.preventDefault();
+        this.closePopup();
+      });
+    }
 
     // close modal also, when click outsite of it
-    this.popup.addEventListener("click", (event) => {
-      if (event.target == this.popup) {
-        this.closePopup();
-      }
-    });
+    if (typeof this.settings.layout == "undefined" || this.settings.layout != 'confirm') {
+      this.popup.addEventListener("click", (event) => {
+        if (event.target == this.popup) {
+          this.closePopup();
+        }
+      });
+    }
   }
 
   controlPopupAppearance() {

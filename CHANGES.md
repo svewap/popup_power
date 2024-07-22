@@ -1,3 +1,8 @@
+### Version 1.3.2
+- [BUGFIX] Close Button is optional
+- [NOTICE] AutoClose on click outside only if not layout: confirm (NEW PRO FEATURE)
+- [NOTICE] Save popup inside window.popupPower
+
 ### Version 1.3.1
 - [BUGFIX] Backend module access comma separated value is not possbile anymore. Set to user
 
