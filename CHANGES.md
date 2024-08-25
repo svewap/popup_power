@@ -1,3 +1,6 @@
+### Version 1.3.3
+- [BUGFIX] Hide Popup Inner Container, when Popup is not shown
+
 ### Version 1.3.2
 - [BUGFIX] Close Button is optional
 - [NOTICE] AutoClose on click outside only if not layout: confirm (NEW PRO FEATURE)
