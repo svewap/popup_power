@@ -47,6 +47,10 @@ return [
                         'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_layout_I_0',
                         'value' => 'modal',
                     ],
+                    [
+                        'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_configuration_layout_I_0',
+                        'value' => 'popup',
+                    ],
                 ],
             ],
         ],

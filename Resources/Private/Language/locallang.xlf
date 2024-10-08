@@ -38,6 +38,9 @@
 			<trans-unit id="tx_popuppower_domain_model_configuration_layout_I_0" resname="tx_popuppower_domain_model_configuration_layout_I_0">
 				<source>Modal</source>
 			</trans-unit>
+			<trans-unit id="tx_popuppower_domain_model_configuration_layout_I_1" resname="tx_popuppower_domain_model_configuration_layout_I_1">
+				<source>Popup</source>
+			</trans-unit>
 			<trans-unit id="module_dashboard_form_layout_prependLabel" resname="module_dashboard_form_layout_prependLabel">
 				<source>Choose layout...</source>
 			</trans-unit>
