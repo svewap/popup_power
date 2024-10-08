@@ -129,7 +129,7 @@ return [
             'label' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_delay',
             'description' => 'LLL:EXT:popup_power/Resources/Private/Language/locallang_db.xlf:tx_popuppower_domain_model_delay_description',
             'config' => [
-                'type' => 'number',
+                'type' => 'input',
             ],
         ],
         't3ver_label' => [

@@ -27,14 +27,13 @@ use Slavlee\PopupPower\Event\AssignVarsForDashboardEvent;
 use Slavlee\PopupPower\Utility\PopupPowerUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RepositoryUtility;
 use Slavlee\PopupPower\Utility\TYPO3\RootlineUtility;
-use TYPO3\CMS\Backend\Attribute\AsController;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
 use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Core\Domain\Repository\PageRepository;
+use TYPO3\CMS\Core\Http\RedirectResponse;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
-#[AsController]
 final class DashboardController extends ActionController
 {
     public function __construct(
@@ -118,14 +117,12 @@ final class DashboardController extends ActionController
             $this->configurationRepository->persistAll();
         }
 
-        return $this->redirectToUri(
-            $this->backendUriBuilder->buildUriFromRoutePath(
-                '/module/web/popuppower/dashboard',
-                [
-                    'id' => $request->getQueryParams()['id'],
-                ]
-            )
-        );
+        return new RedirectResponse($this->backendUriBuilder->buildUriFromRoutePath(
+            '/module/web/PopupPowerWebPopuppowerDashboard',
+            [
+                'id' => $request->getQueryParams()['id'],
+            ]
+        ));
     }
 
     /**
@@ -136,8 +133,8 @@ final class DashboardController extends ActionController
      */
     public function saveAction(Configuration $configuration, int $currentPageId): ResponseInterface
     {
-        if (isset($this->request->getParsedBody()['remove'])) {
-            return $this->redirectToUri(
+        if (isset($this->request->getParsedBody()['tx_popuppower_web_popuppowerwebpopuppowerdashboard']['remove'])) {
+            $this->redirectToUri(
                 $this->backendUriBuilder->buildUriFromRoutePath(
                     '/module/web/popuppower/dashboard/remove',
                     [
@@ -156,7 +153,7 @@ final class DashboardController extends ActionController
 
         return $this->redirectToUri(
             $this->backendUriBuilder->buildUriFromRoutePath(
-                '/module/web/popuppower/dashboard',
+                '/module/web/PopupPowerWebPopuppowerDashboard',
                 [
                     'id' => $currentPageId,
                 ]
